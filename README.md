@@ -1,0 +1,1 @@
+# spot-price-watcher
