@@ -1,0 +1,22 @@
+{
+  "name": "spot-price-watcher",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sugyan/spot-price-watcher.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sugyan/spot-price-watcher/issues"
+  },
+  "homepage": "https://github.com/sugyan/spot-price-watcher#readme",
+  "dependencies": {
+    "aws-sdk": "^2.4.0"
+  }
+}
