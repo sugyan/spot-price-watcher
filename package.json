@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "bin": "./bin/spot-price-watcher.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,8 +18,10 @@
   },
   "homepage": "https://github.com/sugyan/spot-price-watcher#readme",
   "dependencies": {
-    "aws-sdk": "^2.4.0",
+    "aws-sdk": "^2.4.1",
     "blessed": "^0.1.81",
-    "blessed-contrib": "^3.5.5"
+    "blessed-contrib": "^3.5.5",
+    "moment": "^2.13.0",
+    "x256": "0.0.2"
   }
 }
