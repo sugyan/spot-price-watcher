@@ -1,7 +1,7 @@
 {
   "name": "spot-price-watcher",
   "version": "1.0.0",
-  "description": "",
+  "description": "visualize ec2 spot instances price",
   "main": "index.js",
   "bin": "./bin/spot-price-watcher.js",
   "scripts": {
@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/sugyan/spot-price-watcher#readme",
   "dependencies": {
-    "aws-sdk": "^2.4.1",
+    "aws-sdk": "^2.4.2",
     "blessed": "^0.1.81",
     "blessed-contrib": "^3.5.5",
     "moment": "^2.13.0",
