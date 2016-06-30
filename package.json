@@ -18,10 +18,11 @@
   },
   "homepage": "https://github.com/sugyan/spot-price-watcher#readme",
   "dependencies": {
-    "aws-sdk": "^2.4.2",
+    "aws-sdk": "^2.4.3",
     "blessed": "^0.1.81",
     "blessed-contrib": "^3.5.5",
     "moment": "^2.13.0",
+    "sprintf-js": "^1.0.3",
     "x256": "0.0.2"
   }
 }
