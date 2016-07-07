@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "visualize ec2 spot instances price",
   "main": "index.js",
-  "bin": "./bin/spot-price-watcher.js",
+  "bin": {
+    "spotprice": "./bin/spot-price-watcher.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -18,10 +20,12 @@
   },
   "homepage": "https://github.com/sugyan/spot-price-watcher#readme",
   "dependencies": {
-    "aws-sdk": "^2.4.3",
+    "aws-sdk": "^2.4.5",
     "blessed": "^0.1.81",
     "blessed-contrib": "^3.5.5",
-    "moment": "^2.13.0",
+    "json5": "^0.5.0",
+    "minimist": "^1.2.0",
+    "moment": "^2.14.1",
     "sprintf-js": "^1.0.3",
     "x256": "0.0.2"
   }
