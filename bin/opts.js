@@ -63,7 +63,8 @@ const opts = (argv, cwd) => {
 
     return {
         target_regions: target_regions,
-        instance_type: instance_type
+        instance_type: instance_type,
+        help: argv.help || argv.h
     };
 };
 module.exports = opts;
