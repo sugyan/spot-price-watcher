@@ -28,12 +28,17 @@ $ spotprice --type g2.2xlarge
 ```
 
 ```
+$ spotprice --auto_refresh 3
+```
+
+```
 $ cat $HOME/.spotpricerc
 {
     regions: [
         'us', 'eu-west'
     ],
-    type: 'g2.2xlarge'
+    type: 'g2.2xlarge',
+    auto_refresh: 3
 }
 $ spotprice --sporpricerc $HOME/.spotpricerc
 ```

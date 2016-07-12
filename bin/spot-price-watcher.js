@@ -8,9 +8,10 @@ const opts = require('./opts')(argv, process.cwd());
 if (opts.help) {
     /* eslint-disable no-console */
     console.log(`
-        spotprice [--regions target regions default 'all'] [--type target instance type default 'c4.large']
+        spotprice [--regions target regions default 'all'] [--type target instance type default 'c4.large'] [--auto_refresh minutes default 5]
         spotprice --regions us --regions eu-west
         spotprice --type g2.2xlarge
+        spotprice --auto-refresh 3
         spotprice --spotpricerc example/dir/.spotpricerc
 `);
     /* eslint-enable no-console */

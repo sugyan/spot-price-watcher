@@ -60,10 +60,13 @@ const opts = (argv, cwd) => {
         [],
         (Array.isArray(argv.regions) ? argv.regions : [argv.regions]).map((code) => retrieve_region(code))
     );
+    // auto refresh
+    const auto_refresh = argv.auto_refresh || argv.a || rc.auto_refresh;
 
     return {
         target_regions: target_regions,
         instance_type: instance_type,
+        auto_refresh: auto_refresh && (typeof auto_refresh === 'number' ? parseInt(auto_refresh) : 5),
         help: argv.help || argv.h
     };
 };
