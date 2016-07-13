@@ -42,3 +42,16 @@ $ cat $HOME/.spotpricerc
 }
 $ spotprice --sporpricerc $HOME/.spotpricerc
 ```
+
+
+#### Use as EventEmitter ####
+
+```node
+const watcher = new SpotPriceWatcher(opts);
+watcher.on('update', (data) => {
+    Object.keys(data).forEach((key) => {
+        console.log(data[key][0].SpotPrice);
+    });
+});
+setInterval(() => watcher.fetchPrices(), 60 * 1000);
+```
