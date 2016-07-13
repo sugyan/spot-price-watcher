@@ -47,6 +47,8 @@ $ spotprice --sporpricerc $HOME/.spotpricerc
 #### Use as EventEmitter ####
 
 ```node
+const SpotPriceWatcher = require('spot-price-watcher');
+
 const watcher = new SpotPriceWatcher(opts);
 watcher.on('update', (data) => {
     Object.keys(data).forEach((key) => {
