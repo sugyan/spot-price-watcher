@@ -1,6 +1,6 @@
 {
   "name": "spot-price-watcher",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "visualize EC2 spot instance prices",
   "main": "index.js",
   "bin": {
